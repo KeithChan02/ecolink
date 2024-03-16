@@ -1,0 +1,94 @@
+.project-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: center;
+  flex-direction: column;
+}
+
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.project-detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.chart-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 20px;
+    background-color: #4caf50;
+    width: 0%;
+    /* Initial width is 0%, will be set dynamically */
+    border-radius: 8px;
+}
+
+.progress-bar-text {
+    position: center;
+    /* or any value that aligns with your design */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    /* or any color that is visible on your progress bar fill */
+    font-weight: bold;
+}
+
+.project-detail-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-detail-container img {
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-detail-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.project-detail-container .tag {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #666;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-detail-container .tag:hover {
+  background-color: #333;
+}
+
+/* Chart styles */
+.recharts-responsive-container {
+  margin-bottom: 40px;
+}
