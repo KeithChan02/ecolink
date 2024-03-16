@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* or space-between */
+    gap: 20px;
+    /* Adjust the space between the cards */
+    padding: 20px;
+}
+
+
+.project-card-link.project-card {
+    width: calc(30% - 30px);
+    /* adjust the 20px to account for any margin/padding */
+    margin: 10px;
+    /* adjust as needed */
+    /* ...other styles... */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D9D9D9; /* Replace with your chosen color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensures the content fits neatly within the corners */
+    transition: transform 0.3s ease-in-out; /* For a subtle hover effect */
+    position: relative; /*Allows us to position the bookmark button */
+}
+
+.project-card-link.project-card:hover {
+    transform: translateY(-10px);
+    /* Slight raise effect on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.action-button {
+    background-color: #fff;
+    /* White background */
+    color: #0395e6;
+    /* Color of the text/icons */
+    border: 1px solid #1b4148;
+    /* Border color */
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* Transition for hover effect */
+}
+
+.action-button:hover {
+    background-color: #1b4148;
+    /* Button color on hover */
+    color: #fff;
+    /* Text/icon color on hover */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.project-card-link {
+  display: block; /* or inline-block, flex, etc., depending on your layout */
+  text-decoration: none;
+  color: inherit; /* Or set a specific color */
+}
+
+.bookmark-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    /* White background to make it stand out */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    /* Circular button */
+    box-shadow: 0px 4px 8px rgba(231, 3, 3, 0.1);
+    /* Shadow for depth */
+    z-index: 10;
+    /* Ensure it's above other elements */
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adjust gap between tags as needed */
+    /* Space above the tags */
+    padding: 10px 10px;
+}
+
+.tag {
+    background-color: #E1E1E1;
+    /* Light grey background, change as desired */
+    padding: 5px 10px;
+    /* Padding inside tags */
+    border-radius: 5px;
+    /* Rounded corners for tags */
+    font-size: 0.8em;
+    /* Smaller font size for tags */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* This will create a floating effect */
+    margin-bottom: 10px;
+    /* Space below the tags */
+}
+
+/* Individual tag colors */
+.tag.environment {
+    background-color: #4caf50;
+    /* Green */
+}
+.tag.energy {
+    background-color: #FDB813;
+    /* Amber */
+}
+.tag.sustainability {
+    background-color: #4CBB17;
+    /* Amber */
+}
+.tag.water {
+    background-color: #0096FF;
+    /* Amber */
+}
+.tag.health {
+    background-color: #FF6347;
+    /* Amber */
+}
+.tag.ethics {
+    background-color: #76B947;
+    /* Amber */
+}
+.tag.trade {
+    background-color: #F39C12;
+    /* Amber */
+}
+.tag.wind {
+    background-color: #1E90FF;
+    /* Amber */
+}
+.tag.renewable {
+    background-color: #32CD32;
+    /* Amber */
+}
+.tag.housing {
+    background-color: #FF8C00;
+    /* Amber */
+}
+.tag.equity {
+    background-color: #6A5ACD;
+    /* Amber */
+}
+.tag.marine {
+    background-color: #3B9B9B;
+    /* Amber */
+}
+.tag.education {
+    background-color: #FFD700;
+    /* Amber */
+}
+.tag.technology {
+    background-color: #7F8C8D;
+    /* Amber */
+}
+.tag.mobility {
+    background-color: #2ECC71;
+    /* Amber */
+}
+.tag.urban {
+    background-color: #34495E;
+    /* Amber */
+}
+.tag.zero-waste {
+    background-color: #00BFFF;
+    /* Amber */
+}
+.tag.manufacturing {
+    background-color: #BDC3C7;
+    /* Amber */
+}
+
+.project-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 16px;
+}
+
+.project-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.project-description {
+    font-size: 0.9em;
+    margin-bottom: 16px;
+}
+
+.project-progress-bar {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.project-progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.project-funding {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.project-raised,
+.project-goal {
+    font-size: 0.9rem;
+}
+
+.project-target {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.project-days-remaining {
+    font-size: 0.8em;
+    text-align: center;
+    color: #666;
+}
+
+/* Additional styles for icons */
+.fa-heart,
+.fa-comment,
+.fa-share {
+    font-size: 1.2em;
+}

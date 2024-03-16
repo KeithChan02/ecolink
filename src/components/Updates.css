@@ -1,0 +1,103 @@
+.updates-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.update-post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+}
+
+.update-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    /* Adjust size as needed */
+    height: 50px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.company-name {
+    flex-grow: 1;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.update-date {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.update-content {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.update-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.action-button {
+    background-color: #fff;
+    /* White background */
+    color: #0395e6;
+    /* Color of the text/icons */
+    border: 1px solid #1b4148;
+    /* Border color */
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* Transition for hover effect */
+}
+
+.action-button:hover {
+    background-color: #1b4148;
+    /* Button color on hover */
+    color: #fff;
+    /* Text/icon color on hover */
+}
+
+.action-button .like {
+    color: #2d88ff;
+    /* Like button color */
+}
+
+.action-button .comment {
+    color: #8bcb4b;
+    /* Comment button color */
+}
+
+.action-button .share {
+    color: #e76f51;
+    /* Share button color */
+}
+
+.action-button svg {
+    margin-right: 5px;
+}

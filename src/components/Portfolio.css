@@ -1,0 +1,62 @@
+.portfolio {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.chart {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Customize ChartJS Legend */
+.legend {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.legend-item {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.legend-color-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+/* Add custom colors corresponding to your chart's dataset */
+.legend-color-box.project1 { background-color: rgba(255, 99, 132, 0.2); }
+.legend-color-box.project2 { background-color: rgba(54, 162, 235, 0.2); }
+.legend-color-box.project3 { background-color: rgba(255, 206, 86, 0.2); }
+/* Add more classes for additional projects */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .portfolio {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .portfolio h1 {
+        font-size: 20px;
+    }
+}
