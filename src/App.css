@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.hero {
+  background-image: url("C:\Users\USER\OneDrive\Desktop\Statistical Data Science\Year 3 Semester 1\BCG Hack\marketplace-frontendcd\src\assets\images\esg.jpg");
+  /* Update with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  /* 100% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  /* Large text for the title */
+  font-weight: 700;
+  /* Extra bold font weight */
+  margin-bottom: 1rem;
+}
+
+.explore-now-btn {
+  font-size: 1.2rem;
+  /* Larger button text */
+  padding: 15px 30px;
+  /* Larger button padding */
+  border-radius: 8px;
+  background-color: #1976d2;
+  /* Use a theme color for the button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-now-btn:hover {
+  background-color: #2196f3;
+  /* Slightly darker green on hover */
+}
+
+.projects {
+  margin: 20px;
+}
+
+.project-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
